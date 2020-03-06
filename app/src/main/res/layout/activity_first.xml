@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/course"
+    tools:context=".FirstActivity">
+    <EditText
+        android:id="@+id/edtNewCourse"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="487dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"
+        android:ems="10"
+        android:textStyle="italic"
+        android:hint="enter course name..."
+        android:inputType="textFilter"
+        android:textColor="@color/colorWords"
+        android:textColorHint="@color/colorWords"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnCreateCourse"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="382dp"
+        android:background="@drawable/button_shape"
+        android:text="NEW/EXISTING"
+        android:textColor="@color/colorWords" />
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/button_shape"
+        android:text="Delete"
+        android:textColor="@color/colorWords" />
+
+    <Button
+        android:id="@+id/btnallCourses"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="257dp"
+        android:text="All Courses"
+        android:textColor="@color/colorWords"
+        android:background="@drawable/button_shape"/>
+</RelativeLayout>

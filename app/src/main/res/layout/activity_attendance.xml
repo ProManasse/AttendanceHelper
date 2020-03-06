@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Attendance">
+
+    <TextView
+        android:id="@+id/txtTitleAtt"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_above="@+id/txtDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="17dp"
+        android:text="Title"
+        android:textColor="@color/colorWords"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="609dp"
+        android:text="Date"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_above="@+id/txtDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="17dp"
+        android:text="Attendance List"
+        android:textColor="@color/colorWords"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSaveAttendance"
+        android:layout_width="351dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="93dp"
+        android:text="Save"
+        android:background="#FA460707"
+        android:textColor="@color/colorWords" />
+
+    <EditText
+        android:id="@+id/edtAtt"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="131dp"
+        android:ems="10"
+        android:hint="Enter ID"
+        android:inputType="number"
+        android:textColor="@color/colorBlack" />
+
+    <CheckBox
+        android:id="@+id/cbAtt"
+        android:layout_width="109dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="131dp"
+        android:text="Attended"
+        android:textColor="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/btncheckattv"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="58dp"
+        android:background="#FA460707"
+        android:text="List"
+        android:textColor="@color/colorWords" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="608dp"
+        android:textColor="@color/colorBlack"
+        android:text="DATE  :"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDropList"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="57dp"
+        android:background="#FA460707"
+        android:text="delete"
+        android:textColor="@color/colorWords" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:layout_above="@+id/cbAtt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tbData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="25dp">
+
+                <TableRow
+                    android:id="@+id/tr1"
+                    android:layout_width="347dp"
+                    android:layout_height="53dp"
+                    android:layout_below="@+id/tbData"
+                    android:layout_alignStart="@+id/tbData"
+                    android:layout_alignTop="@+id/tbData">
+
+                    <TextView
+                        android:id="@+id/txtr1id"
+                        android:layout_width="58dp"
+                        android:layout_height="match_parent"
+                        android:text="ID"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtr1fname"
+                        android:layout_width="144dp"
+                        android:layout_height="match_parent"
+                        android:text="F Name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtr1lname"
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:text="L Name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCH"
+        android:layout_width="344dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="19dp"
+        android:background="#FA460707"
+        android:text="change"
+        android:textColor="@color/colorWords" />
+
+    <Button
+        android:id="@+id/btnfbyid"
+        android:layout_width="78dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="298dp"
+        android:layout_marginBottom="55dp"
+        android:background="#FA460707"
+        android:text="by ID"
+        android:textColor="@color/colorWords" />
+
+    <Button
+        android:id="@+id/btnfindbydate"
+        android:layout_width="75dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="57dp"
+        android:background="#FA460707"
+        android:text="by date"
+        android:textColor="@color/colorWords" />
+
+    <EditText
+        android:id="@+id/edtftofind"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="131dp"
+        android:digits="0123456789-"
+        android:ems="10"
+        android:hint="dd-mm-yyyy"
+        android:inputType="textPersonName" />
+</RelativeLayout>

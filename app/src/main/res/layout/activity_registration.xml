@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/student"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="491dp"
+        android:text="New Student "
+        android:textColor="@color/colorWords"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSetcoure"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="571dp"
+        android:text="..........."
+        android:textColor="@color/colorWords"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtfirstN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="424dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:hint="first name  in upper case"
+        android:inputType="textFilter"
+        android:textColor="@color/colorWords"
+        android:textColorHint="@color/colorWords"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edtLastN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="358dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        android:ems="10"
+        android:hint="last name first letter upper"
+        android:inputType="textCapWords"
+        android:textColor="@color/colorWords"
+        android:textColorHint="@color/colorWords"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btncreateStud"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="258dp"
+        android:textColor="@color/colorWords"
+        android:background="@drawable/buttons_shape"
+        android:text="Add new" />
+
+    <Button
+        android:id="@+id/btnEdtStud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="79dp"
+        android:textColor="@color/colorWords"
+        android:background="@drawable/buttons_shape"
+        android:text="EDIT" />
+
+    <Button
+        android:id="@+id/btnDelStud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="78dp"
+        android:textColor="@color/colorWords"
+        android:background="@drawable/buttons_shape"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btnViewStud"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="96dp"
+        android:textColor="@color/colorWords"
+        android:background="@drawable/buttons_shape"
+        android:layout_marginBottom="205dp"
+        android:text="View lIST" />
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="140dp"
+        android:ems="10"
+        android:hint="stud id..."
+        android:inputType="number"
+        android:textColor="@color/colorWords"
+        android:textColorHint="@color/colorWords"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnGotoAtt"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="97dp"
+        android:textColor="@color/colorWords"
+        android:background="@drawable/buttons_shape"
+        android:layout_marginBottom="27dp"
+        android:text="go to attendance" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="579dp"
+        android:text="Course :"
+        android:textColor="@color/colorWords"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWords"
+        android:background="@drawable/buttons_shape"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="137dp"
+        android:text="search" />
+</RelativeLayout>
